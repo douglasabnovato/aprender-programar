@@ -12,8 +12,8 @@
 }
 
 body {
-  /* Use o Roboto, importado do Google Fonts */
-  font-family: "Roboto", Arial, sans-serif;
+  /* Use o Poppins, importado do Google Fonts */
+  font-family: "Poppins", Arial, sans-serif;
   background-color: var(--background-color);
   margin: 0;
   color: var(--text-color);
@@ -40,6 +40,12 @@ header p {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 8px; /* Múltiplo de 8px */
   font-weight: 300;
+}
+
+.pills-font {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .container {
