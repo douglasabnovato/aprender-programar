@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Blog de Programação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meu Blog</h1>
+    </header>
+
+    <main class="container">
+      <article class="card">
+        <h2 class="card-title">Introdução ao HTML5</h2>
+        <p class="card-description">
+          O HTML5 é a linguagem de marcação fundamental para a web. Veja um
+          pouco sobre suas novidades!
+        </p>
+        <div class="card-content">
+          <h3>O que é HTML5?</h3>
+          <p>
+            O HTML5 é a última versão do HTML, a linguagem de marcação
+            fundamental para a web. Ele introduziu novas tags semânticas e APIs
+            poderosas para criar aplicações web mais ricas e interativas.
+          </p>
+
+          <h3>Tags Semânticas</h3>
+          <p>
+            O HTML5 trouxe várias novidades, como as tags
+            <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> e
+            <code>&lt;footer&gt;</code>, que ajudam a estruturar o conteúdo de
+            forma mais clara, melhorando a acessibilidade e o SEO.
+          </p>
+          <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Título do Blog&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Título do Post&lt;/h2&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+
+          <h3>Vídeo Explicativo</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p>
+            Com o HTML5, podemos incorporar conteúdo multimídia de forma nativa
+            e criar layouts responsivos com mais facilidade.
+          </p>
+
+          <img
+            src="https://picsum.photos/id/1018/800/400"
+            alt="Exemplo de tag semântica"
+            class="post-image"
+          />
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Dominando o CSS Flexbox</h2>
+        <p class="card-description">
+          Aprenda a usar o Flexbox para criar layouts flexíveis e poderosos de
+          forma simples.
+        </p>
+        <div class="card-content">
+          <h3>O que é Flexbox?</h3>
+          <p>
+            O Flexbox é um módulo de layout unidimensional do CSS que ajuda a
+            distribuir e alinhar elementos dentro de um contêiner. É a
+            ferramenta perfeita para criar barras de navegação, galerias e
+            layouts complexos de forma responsiva.
+          </p>
+
+          <h3>Exemplo Básico</h3>
+          <p>
+            Para começar, basta definir a propriedade
+            <code>display: flex;</code> no contêiner.
+          </p>
+          <pre>
+            <code>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            </code>
+           </pre>
+
+          <h3>Recursos</h3>
+          <img
+            src="https://picsum.photos/id/237/800/400"
+            alt="Exemplo de Flexbox"
+            class="post-image"
+          />
+
+          <p>
+            Existem diversas propriedades no Flexbox, como
+            <code>justify-content</code> para alinhar itens no eixo principal e
+            <code>align-items</code> para alinhar no eixo cruzado. Para aprender
+            mais, confira este vídeo:
+          </p>
+
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/T6-b7u4vM2Q"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
