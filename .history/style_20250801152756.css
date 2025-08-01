@@ -6,14 +6,12 @@
   --card-bg-color: #ffffff; /* Fundo branco para os cards */
   --text-color: #3c4043; /* Texto principal em cinza escuro */
   --text-color-secondary: #5f6368; /* Texto secundário */
-  --shadow-color-1: rgba(60, 64, 67, 0.1);
-  --shadow-color-2: rgba(60, 64, 67, 0.15);
+  --shadow-color: rgba(60, 64, 67, 0.1); /* Sombra suave */
   --border-radius: 8px;
 }
 
 body {
-  /* Use o Roboto, importado do Google Fonts */
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Google Sans", Roboto, Arial, sans-serif; /* Fonte padrão do Google */
   background-color: var(--background-color);
   margin: 0;
   color: var(--text-color);
@@ -24,61 +22,56 @@ body {
 header {
   background-color: var(--primary-color);
   color: white;
-  padding: 48px 16px; /* Ajuste para múltiplos de 8px */
+  padding: 3rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 6px var(--shadow-color-1);
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 header h1 {
   font-size: 2.5rem;
   margin: 0;
-  font-weight: 500;
 }
 
 header p {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 8px; /* Múltiplo de 8px */
-  font-weight: 300;
+  margin-top: 0.5rem;
+  font-weight: 300; /* Levemente mais fina */
 }
 
 .container {
   max-width: 1000px;
-  margin: 32px auto; /* Múltiplo de 8px */
-  padding: 0 16px; /* Múltiplo de 8px */
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 /* Estilo dos cards */
 .card {
   background-color: var(--card-bg-color);
   border-radius: var(--border-radius);
-  /* Sombra sutil em estado normal */
-  box-shadow: 0 2px 4px var(--shadow-color-1);
-  padding: 24px; /* Múltiplo de 8px */
+  box-shadow: 0 2px 6px var(--shadow-color);
+  padding: 1.5rem;
   cursor: pointer;
-  /* Transição com cubic-bezier para movimento mais natural */
-  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
-  margin-bottom: 32px; /* Múltiplo de 8px */
-  outline: none; /* Remove o contorno padrão do foco */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem; /* Espaçamento entre cards */
 }
 
-.card:hover, .card:focus {
-  /* Sombra mais pronunciada ao passar o mouse ou receber foco */
+.card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px var(--shadow-color-2);
+  box-shadow: 0 6px 12px var(--shadow-color);
 }
 
 .card-preview {
   display: flex;
   align-items: flex-start;
-  gap: 24px; /* Múltiplo de 8px */
+  gap: 1.5rem;
 }
 
 .card-thumbnail {
   flex-shrink: 0;
-  width: 200px;
+  width: 200px; /* Reduzi um pouco a imagem para um layout mais equilibrado */
   height: 120px;
-  object-fit: cover;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
   border-radius: var(--border-radius);
 }
 
@@ -90,14 +83,13 @@ header p {
   margin-top: 0;
   color: var(--text-color);
   font-size: 1.5rem;
-  font-weight: 500;
 }
 
 .card-description {
   font-size: 1rem;
   color: var(--text-color-secondary);
   line-height: 1.4;
-  margin-bottom: 16px; /* Múltiplo de 8px */
+  margin-bottom: 1rem;
 }
 
 .card-meta {
@@ -106,7 +98,7 @@ header p {
 }
 
 .card-tags {
-  margin-top: 16px; /* Múltiplo de 8px */
+  margin-top: 1rem;
 }
 
 .tag {
@@ -114,49 +106,47 @@ header p {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   font-size: 0.75rem;
-  padding: 4px 12px; /* Múltiplos de 8px */
+  padding: 0.2rem 0.8rem;
   border-radius: 16px;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 .card-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(.4,0,.2,1), margin-top 0.5s cubic-bezier(.4,0,.2,1);
+  transition: max-height 0.5s ease-out, margin-top 0.5s ease-out;
 }
 
 .card.open .card-content {
   max-height: 2500px;
-  margin-top: 32px; /* Múltiplo de 8px */
+  margin-top: 2rem; /* Aumentei o espaçamento para o conteúdo expandido */
 }
 
 .card-content h3 {
   font-size: 1.75rem;
   color: var(--text-color);
-  margin-top: 32px;
-  margin-bottom: 16px;
-  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .card-content h4 {
   font-size: 1.25rem;
   color: var(--text-color);
-  margin-top: 24px;
-  margin-bottom: 8px;
-  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-content p {
   color: var(--text-color-secondary);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .post-image {
   max-width: 100%;
   height: auto;
   border-radius: var(--border-radius);
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 .video-container {
@@ -165,7 +155,7 @@ header p {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  margin: 24px 0;
+  margin: 1.5rem 0;
   border-radius: var(--border-radius);
 }
 
@@ -178,9 +168,9 @@ header p {
 }
 
 pre {
-  background-color: #202124;
-  color: #e8eaed;
-  padding: 24px;
+  background-color: #202124; /* Fundo cinza escuro para código */
+  color: #e8eaed; /* Texto claro */
+  padding: 1.5rem;
   border-radius: var(--border-radius);
   overflow-x: auto;
   font-family: "Courier New", Courier, monospace;

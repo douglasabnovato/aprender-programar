@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprender Programação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Aprender Programar</h1>
+      <p>Em pílulas, direto ao ponto</p>
+    </header>
+
+    <main class="container">
+      <article class="card">
+        <div class="card-preview">
+          <img
+            src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg"
+            alt="Uma imagem que representa o tema do post"
+            class="card-thumbnail"
+          />
+
+          <div class="card-info">
+            <h2 class="card-title">Introdução ao HTML5</h2>
+            <p class="card-description">
+              O HTML5 é a linguagem de marcação fundamental para a web. Veja um
+              pouco sobre suas novidades!
+            </p>
+
+            <div class="card-meta">
+              <span class="card-author">Por: João Silva</span> |
+              <span class="card-date">Publicado em: 25/07/2025</span> |
+              <span class="card-read-time">Tempo de leitura: 6min</span>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag">#HTML5</span>
+              <span class="tag">#DesenvolvimentoWeb</span>
+              <span class="tag">#Iniciante</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3>O que é HTML5?</h3>
+          <p>
+            O HTML5 é a última versão do HTML, a linguagem de marcação
+            fundamental para a web. Ele introduziu novas tags semânticas e APIs
+            poderosas para criar aplicações web mais ricas e interativas.
+          </p>
+
+          <h3>Tags Semânticas</h3>
+          <p>
+            O HTML5 trouxe várias novidades, como as tags
+            <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> e
+            <code>&lt;footer&gt;</code>, que ajudam a estruturar o conteúdo de
+            forma mais clara, melhorando a acessibilidade e o SEO.
+          </p>
+          <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Título do Blog&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Título do Post&lt;/h2&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+
+          <h3>Vídeo Explicativo</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p>
+            Com o HTML5, podemos incorporar conteúdo multimídia de forma nativa
+            e criar layouts responsivos com mais facilidade.
+          </p>
+
+          <img
+            src="https://picsum.photos/id/1018/800/400"
+            alt="Exemplo de tag semântica"
+            class="post-image"
+          />
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-preview">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D12AQGNVLU6cbfwNA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1728904809763?e=2147483647&v=beta&t=sVSZOTgUbgeaBzSSspQUbpcvxLbXHcddnDDt9WEzNs4"
+            alt="Uma imagem que representa o tema do post"
+            class="card-thumbnail"
+          />
+
+          <div class="card-info">
+            <h2 class="card-title">Dominando o CSS Flexbox</h2>
+            <p class="card-description">
+              Aprenda a usar o Flexbox para criar layouts flexíveis e poderosos
+              de forma simples.
+            </p>
+
+            <div class="card-meta">
+              <span class="card-author">Por: Maria Alves</span> |
+              <span class="card-date">Publicado em: 24/07/2025</span> |
+              <span class="card-read-time">Tempo de leitura: 8min</span>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag">#CSS</span>
+              <span class="tag">#Flexbox</span>
+              <span class="tag">#Layouts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3>O que é Flexbox?</h3>
+          <p>
+            O Flexbox é um módulo de layout unidimensional do CSS que ajuda a
+            distribuir e alinhar elementos dentro de um contêiner. É a
+            ferramenta perfeita para criar barras de navegação, galerias e
+            layouts complexos de forma responsiva.
+          </p>
+
+          <h3>Exemplo Básico</h3>
+          <p>
+            Para começar, basta definir a propriedade
+            <code>display: flex;</code> no contêiner.
+          </p>
+          <pre>
+            <code>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            </code>
+          </pre>
+
+          <h3>Recursos</h3>
+          <img
+            src="https://picsum.photos/id/237/800/400"
+            alt="Exemplo de Flexbox"
+            class="post-image"
+          />
+
+          <p>
+            Existem diversas propriedades no Flexbox, como
+            <code>justify-content</code> para alinhar itens no eixo principal e
+            <code>align-items</code> para alinhar no eixo cruzado. Para aprender
+            mais, confira este vídeo:
+          </p>
+
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/T6-b7u4vM2Q"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-preview">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D12AQGNVLU6cbfwNA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1728904809763?e=2147483647&v=beta&t=sVSZOTgUbgeaBzSSspQUbpcvxLbXHcddnDDt9WEzNs4"
+            alt="Uma imagem que representa o tema do post"
+            class="card-thumbnail"
+          />
+
+          <div class="card-info">
+            <h2 class="card-title">Introdução ao Node.js</h2>
+            <p class="card-description">
+              Aprenda os conceitos essenciais do Node.js e como ele revolucionou
+              o desenvolvimento backend.
+            </p>
+
+            <div class="card-meta">
+              <span class="card-author">Por: Maria Alves</span> |
+              <span class="card-date">Publicado em: 01/08/2025</span> |
+              <span class="card-read-time">Tempo de leitura: 5 minutos</span>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag">#JavaScript</span>
+              <span class="tag">#Node.js</span>
+              <span class="tag">#Backend</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h3>O que é Node.js?</h3>
+          <p>
+            O Node.js é um ambiente de tempo de execução (runtime) para
+            JavaScript, construído com o motor V8 do Google Chrome. Ele permite
+            executar código JavaScript no lado do servidor, fora do navegador.
+            Essa característica o torna uma ferramenta poderosa para a
+            construção de APIs, aplicações web em tempo real e microsserviços,
+            utilizando a mesma linguagem tanto no frontend quanto no backend.
+          </p>
+
+          <h3>Instalando e Executando seu Primeiro Código</h3>
+          <p>
+            Para começar, você precisa ter o Node.js instalado em sua máquina.
+            Após a instalação, você pode criar um arquivo, por exemplo, app.js,
+            e adicionar o código abaixo.
+          </p>
+          <pre>
+            <code>
+            console.log("Olá, mundo! Este é o meu primeiro script Node.js.");
+            </code>
+          </pre>
+
+          <h3>Recursos</h3>
+          <img
+            src="https://picsum.photos/id/237/800/400"
+            alt="Exemplo de Flexbox"
+            class="post-image"
+          />
+
+          <p>
+            Para executar, abra o terminal no diretório do arquivo e digite node
+            app.js. O resultado será a mensagem impressa no console. Este é o
+            ponto de partida para qualquer projeto com Node.js.
+          </p>
+
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p>
+            O vídeo acima explora a arquitetura de I/O não bloqueante do
+            Node.js, explicando como ela permite o processamento de muitas
+            conexões simultaneamente de forma eficiente, um dos principais
+            diferenciais da tecnologia.
+          </p>
+          <p>
+            O ecossistema do Node.js é vasto e conta com o npm (Node Package
+            Manager), o maior repositório de bibliotecas de código aberto do
+            mundo. Nele, você pode encontrar praticamente qualquer ferramenta
+            necessária para o seu projeto, desde frameworks web como Express.js
+            até bibliotecas de utilidades.
+          </p>
+        </div>
+      </article>
+      
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
