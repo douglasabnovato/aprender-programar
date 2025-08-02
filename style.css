@@ -258,3 +258,141 @@ pre {
     height: auto;
   }
 }
+/* Estilos do Footer */
+.site-footer {
+  background-color: var(--background-color);
+  color: var(--text-color-secondary);
+  padding: 48px 16px;
+  text-align: center;
+  border-top: 1px solid rgba(60, 64, 67, 0.1);
+  font-size: 0.9rem;
+  margin-top: 48px;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column; /* Padrão para telas pequenas: uma coluna */
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-brand {
+  margin-bottom: 0;
+}
+
+.brand-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.footer-slogan {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.footer-cta {
+  width: 100%;
+  max-width: 500px; 
+  justify-content: center; 
+}
+
+.footer-cta p {
+  color: var(--text-color);
+  line-height: 1.6; 
+  text-align: justify;
+  padding-inline: 8px; 
+}
+
+.cta-link {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-link:hover {
+  background-color: #1a64d6;
+}
+
+.footer-comm {
+  /* Estilo do novo contêiner para o copyright e redes sociais */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 4px;
+  gap: 8px;  
+}
+
+.footer-copyright { 
+  text-align: end;  
+}
+
+.footer-social {
+  display: flex; 
+  width: 100%;
+  max-width: 100%;
+  justify-content: start;
+  gap: 12px; 
+}
+
+.social-link {
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease; 
+  text-align: left; 
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+.site-footer .pills-font {
+  font-size: 1.1rem;
+}
+
+/* Media Query para telas maiores (desktop) */
+@media (min-width: 768px) {
+  .site-footer .container {
+    flex-direction: row; /* Layout de 3 colunas em desktop */
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-brand,
+  .footer-cta,
+  .footer-comm {
+    /* Distribui o espaço entre as 3 colunas */
+    flex-basis: 30%;
+  }
+
+  .brand-link {
+    align-items: flex-start;
+  }
+
+  .footer-cta {
+    text-align: left;
+    margin: 0;
+  }
+
+  .footer-comm {
+    align-items: flex-end;
+  }
+
+  .footer-social {
+    justify-content: flex-end;
+  }
+}
