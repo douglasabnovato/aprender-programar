@@ -12,7 +12,7 @@
 }
 
 body {
-  /* Use o Poppins, importado do Google Fonts */
+  /* Use o Roboto, importado do Google Fonts */
   font-family: "Poppins", Arial, sans-serif;
   background-color: var(--background-color);
   margin: 0;
@@ -21,15 +21,12 @@ body {
   font-size: 16px;
 }
 
-/* Padrão Material Design: o filtro é uma extensão do cabeçalho */
-
 header {
   background-color: var(--primary-color);
   color: white;
-  padding: 48px 16px 0px 16px; /* A sombra agora define o final do cabeçalho */
+  padding: 48px 16px; /* Ajuste para múltiplos de 8px */
   text-align: center;
-  /* Aumenta a sombra para criar uma separação mais forte da seção de conteúdo */
-  box-shadow: 0 4px 8px var(--shadow-color-2);
+  box-shadow: 0 4px 6px var(--shadow-color-1);
 }
 
 header h1 {
@@ -41,45 +38,13 @@ header h1 {
 header p {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 8px;
-  margin-bottom: 0px; /* Remove o espaçamento de baixo para juntar ao filtro */
+  margin-top: 8px; /* Múltiplo de 8px */
   font-weight: 300;
 }
 
 .pills-font {
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
-/* Estilos para o container dos botões de filtro */
-.filters {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  padding: 24px 12px 24px 12px; /* Adiciona um padding consistente */
-  background-color: var(--primary-color);
-}
-
-/* Estilo para os botões de filtro */
-.filter-btn {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
-  border-radius: 20px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  outline: none;
-}
-
-/* Estilo para o botão de filtro ativo e hover */
-.filter-btn.active,
-.filter-btn:hover {
-  background-color: white;
-  color: var(--primary-color);
-  border-color: white;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
 }
 
 .container {
@@ -140,7 +105,7 @@ header p {
   margin-top: 0;
   color: var(--text-color);
   font-size: 1.5rem;
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .card-description {
@@ -169,17 +134,6 @@ header p {
   margin-right: 8px;
   margin-bottom: 8px;
   font-weight: 500;
-}
-
-.tag-nivel {
-  display: inline-block;
-  background-color: rgb(165, 224, 139);
-  color: rgb(255, 255, 255);
-  font-size: 0.75rem;
-  padding: 4px 12px; /* Múltiplos de 8px */
-  border-radius: 16px; 
-  font-weight: 500;
-  margin-left: 16px;
 }
 
 .card-content {

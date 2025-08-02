@@ -179,7 +179,6 @@ header p {
   padding: 4px 12px; /* Múltiplos de 8px */
   border-radius: 16px; 
   font-weight: 500;
-  margin-left: 16px;
 }
 
 .card-content {

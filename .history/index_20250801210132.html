@@ -4,42 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprender Programar</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+    <link rel="manifest" href="./public/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap"
     rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
-    <link rel="manifest" href="./public/site.webmanifest">  
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
   </head>
   <body>
     <header>
       <h1>Aprender Programar</h1>
       <p>Em <span class="pills-font">pílulas</span> é direto ao ponto</p>
     </header>
-<section class="filters">
-  <button class="filter-btn active" data-filter="all">Todos</button>
-  <button class="filter-btn" data-filter="HTML">HTML</button>
-  <button class="filter-btn" data-filter="CSS">CSS</button>
-  <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
-  <button class="filter-btn" data-filter="Iniciante">Iniciante</button>
-  <button class="filter-btn" data-filter="Intermediário">Intermediário</button>
-  <button class="filter-btn" data-filter="Avançado">Avançado</button>
-</section>
+
     <main class="container">
-       <!-- Básico html -->
+       <!-- Básico -->
         <article class="card" tabindex="0" aria-expanded="false">
         <div class="card-preview">
         <img
@@ -49,7 +45,7 @@
         />
 
         <div class="card-info">
-            <h2 class="card-title">HTML: O Básico para Começar<span class="tag-nivel">#Iniciante</span></h2>
+            <h2 class="card-title">HTML: O Básico para Começar</h2>
             <p class="card-description">
             Dê seus primeiros passos no desenvolvimento web aprendendo o que são
             tags, atributos e a estrutura básica de uma página HTML.
@@ -62,9 +58,9 @@
             </div>
 
             <div class="card-tags">
-                <span class="tag">#HTML</span>
-                <span class="tag">#Iniciante</span>
-                <span class="tag">#PrimeirosPassos</span>
+            <span class="tag">#HTML</span>
+            <span class="tag">#Iniciante</span>
+            <span class="tag">#PrimeirosPassos</span>
             </div>
         </div>
         </div>
@@ -124,206 +120,7 @@
         </p>
         </div>
         </article>
-<!-- Básico css -->
-    <article class="card" tabindex="0" aria-expanded="false">
-    <div class="card-preview">
-    <img
-    src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    alt="Uma imagem que representa o tema do post"
-    class="card-thumbnail"
-    />
-
-    <div class="card-info">
-    <h2 class="card-title">CSS: Estilizando seu Primeiro Site<span class="tag-nivel">#Iniciante</span></h2>
-    <p class="card-description">
-    Dê cor e vida à sua página web! Aprenda a sintaxe básica do CSS e como
-    conectar o estilo ao seu HTML.
-    </p>
-
-    <div class="card-meta">
-    <span class="card-author">Por: Equipe Aprender Programar</span> |
-    <span class="card-date">Publicado em: 08/08/2025</span> |
-    <span class="card-read-time">Tempo de leitura: 5min</span>
-    </div>
-
-    <div class="card-tags">
-    <span class="tag">#CSS</span>
-    <span class="tag">#Iniciante</span>
-    <span class="tag">#Estilo</span>
-    </div>
-    </div>
-    </div>
-
-    <div class="card-content">
-    <p>
-    Se o HTML é o esqueleto da sua página web, o **CSS (Cascading Style
-    Sheets)** é a pele e a roupa. Ele é responsável por toda a parte visual:
-    cores, fontes, espaçamentos e layouts.
-    </p>
-
-    <h4>Sintaxe e Conexão com o HTML</h4>
-    <p>
-    Um código CSS é composto por **regras de estilo**. Cada regra tem um
-    **seletor**, que aponta para o elemento HTML que você quer estilizar, e
-    um bloco de **declarações** com as propriedades e seus valores.
-    </p>
-
-    <pre><code>
-    p {
-    color: #3c4043;
-    font-size: 16px;
-    }
-    </code></pre>
-
-    <p>
-    Para que o CSS funcione, você precisa vincular o arquivo de estilos ao
-    seu HTML. Isso é feito no <code>&lt;head&gt;</code> do documento com a
-    tag <code>&lt;link&gt;</code>.
-    </p>
-
-    <pre><code>
-    &lt;head&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
-    &lt;/head&gt;
-    </code></pre>
-
-    <h4>Seletores: ID e Class</h4>
-    <p>
-    Para aplicar estilos a elementos específicos, usamos seletores. O
-    **seletor de classe** (<code>.</code>) é usado para estilizar múltiplos
-    elementos, enquanto o **seletor de ID** (<code>#</code>) é para um
-    único elemento.
-    </p>
-
-    <pre><code>
-    /* Seletor de Classe */
-    .titulo-destaque {
-    font-weight: bold;
-    color: var(--primary-color);
-    }
-
-    /* Seletor de ID */
-    #menu-principal {
-    background-color: var(--card-bg-color);
-    }
-    </code></pre>
-
-    <p>
-    Você pode aplicar esses seletores no seu HTML da seguinte forma:
-    <code>&lt;h1 class="titulo-destaque"&gt;</code> ou
-    <code>&lt;nav id="menu-principal"&gt;</code>.
-    </p>
-
-    <p>
-    Com estes conceitos, você já pode começar a transformar a aparência da
-    sua página. Em breve, veremos como organizar o conteúdo com o Flexbox!
-    </p>
-    </div>
-    </article>
-<!-- Básico js -->
-    <article class="card" tabindex="0" aria-expanded="false">
-  <div class="card-preview">
-    <img
-      src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt="Uma imagem que representa o tema do post"
-      class="card-thumbnail"
-    />
-
-    <div class="card-info">
-      <h2 class="card-title">JavaScript: Primeiros Passos na Lógica<span class="tag-nivel">#Iniciante</span></h2>
-      <p class="card-description">
-        Descubra os fundamentos do JavaScript: variáveis, tipos de dados e
-        funções. Comece a adicionar lógica e interatividade ao seu site.
-      </p>
-
-      <div class="card-meta">
-        <span class="card-author">Por: Equipe Aprender Programar</span> |
-        <span class="card-date">Publicado em: 11/08/2025</span> |
-        <span class="card-read-time">Tempo de leitura: 6min</span>
-      </div>
-
-      <div class="card-tags">
-        <span class="tag">#JavaScript</span>
-        <span class="tag">#Iniciante</span>
-        <span class="tag">#Lógica</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-content">
-    <p>
-      Se o HTML é a estrutura e o CSS é a aparência, o **JavaScript** é o
-      comportamento. É a linguagem que dá vida à sua página, permitindo
-      interações dinâmicas, como animações, validação de formulários e
-      muito mais.
-    </p>
-
-    <h4>Variáveis e Tipos de Dados</h4>
-    <p>
-      **Variáveis** são como caixas onde você guarda informações. Elas
-      podem conter diferentes **tipos de dados**, como textos, números ou
-      valores lógicos.
-    </p>
-    <ul>
-      <li>
-        `String`: Textos. Ex: <code>const nome = "Maria";</code>
-      </li>
-      <li>
-        `Number`: Números. Ex: <code>let idade = 30;</code>
-      </li>
-      <li>
-        `Boolean`: Valores lógicos. Ex:
-        <code>let estaLogado = true;</code>
-      </li>
-    </ul>
-
-    <h4>Operadores Básicos</h4>
-    <p>
-      Operadores são símbolos que realizam operações. Os mais comuns incluem:
-    </p>
-    <ul>
-      <li>
-        `+`, `-`, `*`, `/`: Operadores matemáticos.
-      </li>
-      <li>
-        `==`, `===`: Operadores de comparação.
-      </li>
-      <li>
-        `&&` (AND), `||` (OR): Operadores lógicos.
-      </li>
-    </ul>
-    <pre><code>
-const num1 = 10;
-const num2 = 5;
-
-// Soma os números
-const soma = num1 + num2;
-console.log(soma); // 15
-    </code></pre>
-
-    <h4>Funções: Reutilizando Código</h4>
-    <p>
-      Uma **função** é um bloco de código que você pode chamar e executar
-      várias vezes. Elas são essenciais para organizar seu código e evitar
-      repetição.
-    </p>
-    <pre><code>
-// Declaração da função
-function saudacao(nome) {
-  return "Olá, " + nome + "!";
-}
-
-// Chamando a função
-console.log(saudacao("João"));
-    </code></pre>
-    <p>
-      Com esses fundamentos, você já pode começar a pensar em como o
-      JavaScript pode interagir com o seu HTML. O próximo passo é aprender a
-      manipular os elementos da página.
-    </p>
-  </div>
-</article>
- <!-- Intermediário html -->
+ <!-- Intermediário -->
         <article class="card" tabindex="0" aria-expanded="false">
         <div class="card-preview">
         <img
@@ -333,7 +130,7 @@ console.log(saudacao("João"));
         />
 
         <div class="card-info">
-            <h2 class="card-title">HTML: O Poder da Semântica<span class="tag-nivel">#Intermediário</span></h2>
+            <h2 class="card-title">HTML: O Poder da Semântica</h2>
             <p class="card-description">
             Vá além do básico. Aprenda a organizar seu conteúdo de forma
             significativa usando tags semânticas para SEO e acessibilidade.
@@ -429,201 +226,7 @@ console.log(saudacao("João"));
         </p>
         </div>
         </article>
- <!-- Intermediário css -->
-    <article class="card" tabindex="0" aria-expanded="false">
-    <div class="card-preview">
-    <img
-    src="https://images.pexels.com/photos/4557993/pexels-photo-4557993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    alt="Uma imagem que representa o tema do post"
-    class="card-thumbnail"
-    />
-
-    <div class="card-info">
-    <h2 class="card-title">CSS: Dominando o Flexbox para Layouts<span class="tag-nivel">#Intermediário</span></h2>
-    <p class="card-description">
-    Diga adeus a layouts complicados. Aprenda a usar o Flexbox para
-    organizar elementos de forma simples e responsiva.
-    </p>
-
-    <div class="card-meta">
-    <span class="card-author">Por: Equipe Aprender Programar</span> |
-    <span class="card-date">Publicado em: 09/08/2025</span> |
-    <span class="card-read-time">Tempo de leitura: 7min</span>
-    </div>
-
-    <div class="card-tags">
-    <span class="tag">#CSS</span>
-    <span class="tag">#Flexbox</span>
-    <span class="tag">#Layout</span>
-    </div>
-    </div>
-    </div>
-
-    <div class="card-content">
-    <p>
-    O **Flexbox** é um módulo de layout unidimensional do CSS que permite
-    organizar elementos em uma linha ou coluna. É a ferramenta mais
-    utilizada para criar componentes de interface de forma fácil e
-    responsiva.
-    </p>
-
-    <h4>Flexbox na Prática: Contêiner e Itens</h4>
-    <p>
-    O Flexbox funciona com um **contêiner** (o pai) e seus **itens** (os
-    filhos). A mágica acontece quando você define o contêiner com
-    <code>display: flex</code>.
-    </p>
-
-    <pre><code>
-    .container {
-    display: flex;
-    flex-direction: row; /* Ou column */
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    }
-    </code></pre>
-
-    <p>
-    Veja o que cada propriedade faz:
-    </p>
-    <ul>
-    <li>
-    <code>flex-direction</code>: Define se os itens se organizam em
-    linha (<code>row</code>) ou em coluna (<code>column</code>).
-    </li>
-    <li>
-    <code>justify-content</code>: Controla o alinhamento dos itens no
-    eixo principal.
-    </li>
-    <li>
-    <code>align-items</code>: Controla o alinhamento dos itens no eixo
-    secundário.
-    </li>
-    </ul>
-
-    <p>
-    A seguir, um exemplo de como usar o Flexbox para centralizar os itens de
-    um menu de navegação:
-    </p>
-    <pre><code>
-    &lt;nav class="menu-nav"&gt;
-    &lt;a href="#"&gt;Início&lt;/a&gt;
-    &lt;a href="#"&gt;Sobre&lt;/a&gt;
-    &lt;a href="#"&gt;Contato&lt;/a&gt;
-    &lt;/nav&gt;
-    </code></pre>
-
-    <pre><code>
-    .menu-nav {
-    display: flex;
-    justify-content: space-around; /* Distribui o espaço entre os itens */
-    }
-    </code></pre>
-
-    <p>
-    Com o Flexbox, você pode criar layouts complexos e dinâmicos de forma
-    simples. Em nosso próximo e último artigo sobre CSS, vamos dar vida aos
-    seus layouts com animações!
-    </p>
-    </div>
-    </article>
- <!-- Intermediário js -->
-    <article class="card" tabindex="0" aria-expanded="false">
-  <div class="card-preview">
-    <img
-      src="https://images.pexels.com/photos/4557993/pexels-photo-4557993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt="Uma imagem que representa o tema do post"
-      class="card-thumbnail"
-    />
-
-    <div class="card-info">
-      <h2 class="card-title">JavaScript: Manipulando o DOM<span class="tag-nivel">#Intermediário</span></h2>
-      <p class="card-description">
-        Aprenda a selecionar elementos e modificar o conteúdo e estilo da sua
-        página. Dê vida ao seu site com interatividade.
-      </p>
-
-      <div class="card-meta">
-        <span class="card-author">Por: Equipe Aprender Programar</span> |
-        <span class="card-date">Publicado em: 12/08/2025</span> |
-        <span class="card-read-time">Tempo de leitura: 7min</span>
-      </div>
-
-      <div class="card-tags">
-        <span class="tag">#JavaScript</span>
-        <span class="tag">#DOM</span>
-        <span class="tag">#Intermediário</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-content">
-    <p>
-      O **DOM (Document Object Model)** é a representação em árvore da sua
-      página HTML. O JavaScript se comunica com o DOM para acessar e modificar
-      os elementos.
-    </p>
-
-    <h4>Selecionando Elementos</h4>
-    <p>
-      Antes de modificar algo, você precisa selecioná-lo. A maneira mais
-      comum é usando <code>querySelector()</code>.
-    </p>
-    <pre><code>
-// Seleciona um elemento por ID
-const titulo = document.querySelector("#titulo-principal");
-
-// Seleciona o primeiro elemento com uma classe
-const paragrafo = document.querySelector(".paragrafo-destaque");
-    </code></pre>
-
-    <h4>Modificando Conteúdo e Estilo</h4>
-    <p>
-      Depois de selecionar um elemento, você pode mudar seu conteúdo, atributos
-      e estilos.
-    </p>
-    <pre><code>
-// Muda o texto
-titulo.textContent = "Olá, Mundo alterado!";
-
-// Adiciona uma classe CSS
-paragrafo.classList.add("paragrafo-azul");
-
-// Remove uma classe
-paragrafo.classList.remove("paragrafo-vermelho");
-
-// Altera um estilo diretamente
-titulo.style.color = "blue";
-    </code></pre>
-    <p>
-      A propriedade `classList` é especialmente útil, pois permite alternar
-      classes CSS, o que é a base de muitas interações dinâmicas.
-    </p>
-
-    <h4>Exemplo Prático: Alternando Classes</h4>
-    <p>
-      Imagine um botão que muda de estilo quando clicado.
-    </p>
-    <pre><code>
-const botao = document.querySelector("#botao-acao");
-
-botao.addEventListener("click", () => {
-  botao.classList.toggle("ativo");
-});
-    </code></pre>
-    <p>
-      A função `classList.toggle()` adiciona a classe "ativo" se ela não
-      estiver presente, e a remove se estiver. Essa é uma técnica poderosa
-      para criar interações simples e eficientes.
-    </p>
-    <p>
-      Com a manipulação do DOM, você pode criar uma experiência interativa. O
-      próximo passo é ir além da página local e interagir com o mundo
-      exterior, usando eventos e APIs.
-    </p>
-  </div>
-</article>
- <!-- Avançado html -->
+ <!-- Avançando -->
         <article class="card" tabindex="0" aria-expanded="false">
         <div class="card-preview">
         <img
@@ -633,7 +236,7 @@ botao.addEventListener("click", () => {
         />
 
         <div class="card-info">
-            <h2 class="card-title">HTML: Formulários e APIs Nativas<span class="tag-nivel">#Avançado</span></h2>
+            <h2 class="card-title">HTML: Formulários e APIs Nativas</h2>
             <p class="card-description">
             Crie formulários inteligentes e utilize o poder do HTML5 para
             interagir com o dispositivo do usuário.
@@ -712,184 +315,6 @@ botao.addEventListener("click", () => {
         </p>
         </div>
         </article>
-<!-- Avançado css -->
-    <article class="card" tabindex="0" aria-expanded="false">
-    <div class="card-preview">
-    <img
-    src="https://images.pexels.com/photos/5926384/pexels-photo-5926384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    alt="Uma imagem que representa o tema do post"
-    class="card-thumbnail"
-    />
-
-    <div class="card-info">
-    <h2 class="card-title">CSS: Animações e Transições para Dar Vida<span class="tag-nivel">#Avançado</span></h2>
-    <p class="card-description">
-    Deixe seu site mais dinâmico. Aprenda a usar transições e keyframes
-    para criar efeitos visuais incríveis.
-    </p>
-
-    <div class="card-meta">
-    <span class="card-author">Por: Equipe Aprender Programar</span> |
-    <span class="card-date">Publicado em: 10/08/2025</span> |
-    <span class="card-read-time">Tempo de leitura: 6min</span>
-    </div>
-
-    <div class="card-tags">
-    <span class="tag">#CSS</span>
-    <span class="tag">#Animação</span>
-    <span class="tag">#Avançado</span>
-    </div>
-    </div>
-    </div>
-
-    <div class="card-content">
-    <p>
-    Adicionar movimento a uma página pode melhorar a experiência do usuário.
-    O CSS oferece duas ferramentas principais para isso: **transições**
-    (<code>transition</code>) e **animações** (<code>@keyframes</code>).
-    </p>
-
-    <h4>Transições: Movimento entre Estados</h4>
-    <p>
-    Uma transição é uma forma de animar a mudança de uma propriedade CSS
-    entre dois estados, como um elemento que muda de cor ao passar o mouse.
-    </p>
-
-    <pre><code>
-    .botao {
-    background-color: var(--primary-color);
-    transition: background-color 0.3s ease-in-out;
-    }
-
-    .botao:hover {
-    background-color: #1a64d6; /* Um azul um pouco mais escuro */
-    }
-    </code></pre>
-
-    <p>
-    A propriedade <code>transition</code> especifica a propriedade a ser
-    animada (<code>background-color</code>), a duração (<code>0.3s</code>)
-    e a função de tempo (<code>ease-in-out</code>), que controla a
-    velocidade da animação.
-    </p>
-
-    <h4>Animações: Movimento Contínuo e Personalizado</h4>
-    <p>
-    Para animações mais complexas ou que não dependem de um evento como o
-    `hover`, usamos a regra `@keyframes`. Ela permite definir os estágios
-    de uma animação do início ao fim.
-    </p>
-
-    <pre><code>
-    @keyframes pulso {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-    }
-
-    .elemento-animado {
-    animation: pulso 2s infinite;
-    }
-    </code></pre>
-
-    <p>
-    Neste exemplo, a animação `pulso` faz com que o elemento aumente e
-    diminua de tamanho continuamente. A propriedade `animation` no
-    `.elemento-animado` aplica a animação com duração de 2 segundos e
-    repete infinitamente.
-    </p>
-
-    <p>
-    Com transições e animações, você pode criar uma experiência visual
-    muito mais rica e interativa, elevando o nível do seu projeto. Com isso,
-    concluímos a trilha de CSS!
-    </p>
-    </div>
-    </article>
-<!-- Avançando js -->
-    <article class="card" tabindex="0" aria-expanded="false">
-  <div class="card-preview">
-    <img
-      src="https://images.pexels.com/photos/5926384/pexels-photo-5926384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt="Uma imagem que representa o tema do post"
-      class="card-thumbnail"
-    />
-
-    <div class="card-info">
-      <h2 class="card-title">JS: Eventos e Requisições Assíncronas<span class="tag-nivel">#Avançado</span></h2>
-      <p class="card-description">
-        Construa aplicações web dinâmicas que respondem a eventos e buscam
-        dados da internet usando a API Fetch.
-      </p>
-
-      <div class="card-meta">
-        <span class="card-author">Por: Equipe Aprender Programar</span> |
-        <span class="card-date">Publicado em: 13/08/2025</span> |
-        <span class="card-read-time">Tempo de leitura: 8min</span>
-      </div>
-
-      <div class="card-tags">
-        <span class="tag">#JavaScript</span>
-        <span class="tag">#Eventos</span>
-        <span class="tag">#Avançado</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-content">
-    <p>
-      Uma aplicação web moderna não é apenas reativa, ela é interativa. O
-      JavaScript permite que o seu site **responda a eventos** do usuário
-      e **faça requisições** para APIs na internet.
-    </p>
-
-    <h4>Eventos: Ações do Usuário</h4>
-    <p>
-      Eventos são ações do usuário, como cliques, movimentos do mouse ou
-      envios de formulário. O método `addEventListener()` permite que você
-      "escute" por um evento e execute uma função em resposta.
-    </p>
-    <pre><code>
-const botao = document.querySelector('#meu-botao');
-botao.addEventListener('click', function(event) {
-  alert('Você clicou no botão!');
-});
-    </code></pre>
-    <p>
-      Neste exemplo, a função é executada toda vez que o botão com o ID
-      `meu-botao` é clicado.
-    </p>
-
-    <h4>Requisições Assíncronas com `fetch`</h4>
-    <p>
-      Para buscar dados de outras fontes, como uma API de notícias ou de
-      clima, usamos requisições assíncronas. A **API Fetch** é a forma
-      nativa de fazer isso no JavaScript moderno.
-    </p>
-    <pre><code>
-// URL da API que retorna uma lista de posts de exemplo
-const url = 'https://jsonplaceholder.typicode.com/posts/1';
-
-fetch(url)
-  .then(response => response.json()) // Converte a resposta para JSON
-  .then(data => {
-    console.log(data); // Exibe os dados no console
-    // document.querySelector('#titulo').textContent = data.title;
-  })
-  .catch(error => console.error('Erro:', error));
-    </code></pre>
-    <p>
-      Com o `fetch`, o seu site pode carregar dados em segundo plano sem
-      travar a interface. Isso é a base para a criação de aplicações como
-      redes sociais, e-commerce e dashboards interativos.
-    </p>
-    <p>
-      Parabéns! Você concluiu a jornada de aprendizado em JavaScript,
-      dominando a lógica, a manipulação do DOM e a comunicação com a
-      internet.
-    </p>
-  </div>
-</article>
 <!-- Pílula -->
         <article class="card" tabindex="0" aria-expanded="false">
             <div class="card-preview">
@@ -900,7 +325,7 @@ fetch(url)
                 />
 
                 <div class="card-info">
-                <h2 class="card-title">Bem-vindo ao Aprender Programar!<span class="tag-nivel">#Iniciante</span></h2>
+                <h2 class="card-title">Bem-vindo ao Aprender Programar!</h2>
                 <p class="card-description">
                     Descubra um jeito rápido e prático de aprender programação com nossos
                     conteúdos em pílulas, direto ao ponto.
@@ -1003,7 +428,7 @@ fetch(url)
             />
 
             <div class="card-info">
-                <h2 class="card-title">Introdução ao HTML5<span class="tag-nivel">#Iniciante</span></h2>
+                <h2 class="card-title">Introdução ao HTML5</h2>
                 <p class="card-description">
                 O HTML5 é a linguagem de marcação fundamental para a web. Veja um
                 pouco sobre suas novidades!
@@ -1078,7 +503,7 @@ fetch(url)
             </div>
             </div>
         </article>
-<!-- Linkedin -->
+<!-- Linkdein HTML 5 -->
         <article class="card" tabindex="0" aria-expanded="false">
             <div class="card-preview">
             <img
@@ -1088,7 +513,7 @@ fetch(url)
             />
 
             <div class="card-info">
-                <h2 class="card-title">O Perfil do Desenvolvedor<span class="tag-nivel">#Iniciante</span></h2>
+                <h2 class="card-title">O Perfil do Desenvolvedor</h2>
                 <p class="card-description">
                 Descubra como otimizar seu perfil no LinkedIn para atrair oportunidades e se conectar com outros profissionais de tecnologia.
                 </p>

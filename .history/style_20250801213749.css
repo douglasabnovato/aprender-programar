@@ -140,7 +140,7 @@ header p {
   margin-top: 0;
   color: var(--text-color);
   font-size: 1.5rem;
-  font-weight: 500;  
+  font-weight: 500; 
 }
 
 .card-description {
@@ -176,10 +176,9 @@ header p {
   background-color: rgb(165, 224, 139);
   color: rgb(255, 255, 255);
   font-size: 0.75rem;
-  padding: 4px 12px; /* Múltiplos de 8px */
+  padding: 16px 12px; /* Múltiplos de 8px */
   border-radius: 16px; 
   font-weight: 500;
-  margin-left: 16px;
 }
 
 .card-content {
