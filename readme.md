@@ -2,6 +2,8 @@
 
 Este projeto é um blog minimalista e moderno, focado em oferecer conteúdo de programação de forma concisa e direta, ideal para desenvolvedores que buscam aprendizado rápido e eficiente.
 
+![Aprender Programar](./assets/imgs/tela.png)
+
 ## Características
 
 - Design Minimalista e Moderno: Estética limpa, inspirada no Material Design do Google, com foco na legibilidade e na experiência do usuário.
