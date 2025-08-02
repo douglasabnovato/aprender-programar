@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprender Programar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+    <link rel="manifest" href="./public/site.webmanifest">  
+  </head>
+  <body>
+    <header>
+      <h1>Aprender Programar</h1>
+      <p>Em <span class="pills-font">pílulas</span> é direto ao ponto</p>
+    </header>
+<section class="filters">
+  <button class="filter-btn active" data-filter="all">Todos</button>
+  <button class="filter-btn" data-filter="HTML">HTML</button>
+  <button class="filter-btn" data-filter="CSS">CSS</button>
+  <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+  <button class="filter-btn" data-filter="Iniciante">Iniciante</button>
+  <button class="filter-btn" data-filter="Intermediário">Intermediário</button>
+  <button class="filter-btn" data-filter="Avançado">Avançado</button>
+</section>
+    <main class="container">
+       <!-- Básico html -->
+        <article class="card" tabindex="0" aria-expanded="false">
+        <div class="card-preview">
+        <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Uma imagem que representa o tema do post"
+            class="card-thumbnail"
+        />
+
+        <div class="card-info">
+            <h2 class="card-title">HTML: O Básico para Começar<span class="tag-nivel">#Iniciante</span></h2>
+            <p class="card-description">
+            Dê seus primeiros passos no desenvolvimento web aprendendo o que são
+            tags, atributos e a estrutura básica de uma página HTML.
+            </p>
+
+            <div class="card-meta">
+            <span class="card-author">Por: Equipe Aprender Programar</span> |
+            <span class="card-date">Publicado em: 05/08/2025</span> |
+            <span class="card-read-time">Tempo de leitura: 5min</span>
+            </div>
+
+            <div class="card-tags">
+                <span class="tag">#HTML</span>
+                <span class="tag">#Iniciante</span>
+                <span class="tag">#PrimeirosPassos</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-content">
+        <p>
+            O **HTML (HyperText Markup Language)** é a linguagem de marcação que
+            define a estrutura e o conteúdo de uma página web. Pense nele como o
+            esqueleto de um site. Sem o HTML, não há página.
+        </p>
+
+        <h4>Tags e Atributos: os Blocos de Construção</h4>
+        <p>
+            O HTML é composto por **tags**, que são usadas para marcar os diferentes
+            tipos de conteúdo. Por exemplo, a tag <code>&lt;h1&gt;</code> define um
+            título principal e a tag <code>&lt;p&gt;</code> define um parágrafo.
+        </p>
+
+        <p>
+            As tags podem ter **atributos**, que fornecem informações adicionais
+            sobre o elemento. No exemplo a seguir, o atributo <code>href</code>
+            define o destino de um link:
+        </p>
+        <pre><code>
+        &lt;a href="https://www.google.com"&gt;Visitar Google&lt;/a&gt;
+        </code></pre>
+
+        <h4>Estrutura Básica de um Documento HTML</h4>
+        <p>
+            Todo documento HTML segue uma estrutura padrão. Você sempre começará com a
+            declaração do tipo de documento e as tags <code>&lt;html&gt;</code>,
+            <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>.
+        </p>
+
+        <p>
+            A tag <code>&lt;head&gt;</code> contém metadados, como o título da
+            página, que não são exibidos no corpo do documento. Já a tag
+            <code>&lt;body&gt;</code> é onde todo o conteúdo visível da página
+            fica.
+        </p>
+        <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pt-br"&gt;
+        &lt;head&gt;
+        &lt;title&gt;Minha Primeira Página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+        &lt;p&gt;Esta é a minha primeira página web.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+        <p>
+            Parabéns! Você acabou de aprender os fundamentos do HTML. O próximo
+            passo é entender como estruturar seu conteúdo de forma mais
+            inteligente com as tags semânticas.
+        </p>
+        </div>
+        </article>
+<!-- Básico css -->
+    <article class="card" tabindex="0" aria-expanded="false">
+    <div class="card-preview">
+    <img
+    src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    alt="Uma imagem que representa o tema do post"
+    class="card-thumbnail"
+    />
+
+    <div class="card-info">
+    <h2 class="card-title">CSS: Estilizando seu Primeiro Site<span class="tag-nivel">#Iniciante</span></h2>
+    <p class="card-description">
+    Dê cor e vida à sua página web! Aprenda a sintaxe básica do CSS e como
+    conectar o estilo ao seu HTML.
+    </p>
+
+    <div class="card-meta">
+    <span class="card-author">Por: Equipe Aprender Programar</span> |
+    <span class="card-date">Publicado em: 08/08/2025</span> |
+    <span class="card-read-time">Tempo de leitura: 5min</span>
+    </div>
+
+    <div class="card-tags">
+    <span class="tag">#CSS</span>
+    <span class="tag">#Iniciante</span>
+    <span class="tag">#Estilo</span>
+    </div>
+    </div>
+    </div>
+
+    <div class="card-content">
+    <p>
+    Se o HTML é o esqueleto da sua página web, o **CSS (Cascading Style
+    Sheets)** é a pele e a roupa. Ele é responsável por toda a parte visual:
+    cores, fontes, espaçamentos e layouts.
+    </p>
+
+    <h4>Sintaxe e Conexão com o HTML</h4>
+    <p>
+    Um código CSS é composto por **regras de estilo**. Cada regra tem um
+    **seletor**, que aponta para o elemento HTML que você quer estilizar, e
+    um bloco de **declarações** com as propriedades e seus valores.
+    </p>
+
+    <pre><code>
+    p {
+    color: #3c4043;
+    font-size: 16px;
+    }
+    </code></pre>
+
+    <p>
+    Para que o CSS funcione, você precisa vincular o arquivo de estilos ao
+    seu HTML. Isso é feito no <code>&lt;head&gt;</code> do documento com a
+    tag <code>&lt;link&gt;</code>.
+    </p>
+
+    <pre><code>
+    &lt;head&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/head&gt;
+    </code></pre>
+
+    <h4>Seletores: ID e Class</h4>
+    <p>
+    Para aplicar estilos a elementos específicos, usamos seletores. O
+    **seletor de classe** (<code>.</code>) é usado para estilizar múltiplos
+    elementos, enquanto o **seletor de ID** (<code>#</code>) é para um
+    único elemento.
+    </p>
+
+    <pre><code>
+    /* Seletor de Classe */
+    .titulo-destaque {
+    font-weight: bold;
+    color: var(--primary-color);
+    }
+
+    /* Seletor de ID */
+    #menu-principal {
+    background-color: var(--card-bg-color);
+    }
+    </code></pre>
+
+    <p>
+    Você pode aplicar esses seletores no seu HTML da seguinte forma:
+    <code>&lt;h1 class="titulo-destaque"&gt;</code> ou
+    <code>&lt;nav id="menu-principal"&gt;</code>.
+    </p>
+
+    <p>
+    Com estes conceitos, você já pode começar a transformar a aparência da
+    sua página. Em breve, veremos como organizar o conteúdo com o Flexbox!
+    </p>
+    </div>
+    </article>
+<!-- Básico js -->
+    <article class="card" tabindex="0" aria-expanded="false">
+  <div class="card-preview">
+    <img
+      src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Uma imagem que representa o tema do post"
+      class="card-thumbnail"
+    />
+
+    <div class="card-info">
+      <h2 class="card-title">JavaScript: Primeiros Passos na Lógica<span class="tag-nivel">#Iniciante</span></h2>
+      <p class="card-description">
+        Descubra os fundamentos do JavaScript: variáveis, tipos de dados e
+        funções. Comece a adicionar lógica e interatividade ao seu site.
+      </p>
+
+      <div class="card-meta">
+        <span class="card-author">Por: Equipe Aprender Programar</span> |
+        <span class="card-date">Publicado em: 11/08/2025</span> |
+        <span class="card-read-time">Tempo de leitura: 6min</span>
+      </div>
+
+      <div class="card-tags">
+        <span class="tag">#JavaScript</span>
+        <span class="tag">#Iniciante</span>
+        <span class="tag">#Lógica</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <p>
+      Se o HTML é a estrutura e o CSS é a aparência, o **JavaScript** é o
+      comportamento. É a linguagem que dá vida à sua página, permitindo
+      interações dinâmicas, como animações, validação de formulários e
+      muito mais.
+    </p>
+
+    <h4>Variáveis e Tipos de Dados</h4>
+    <p>
+      **Variáveis** são como caixas onde você guarda informações. Elas
+      podem conter diferentes **tipos de dados**, como textos, números ou
+      valores lógicos.
+    </p>
+    <ul>
+      <li>
+        `String`: Textos. Ex: <code>const nome = "Maria";</code>
+      </li>
+      <li>
+        `Number`: Números. Ex: <code>let idade = 30;</code>
+      </li>
+      <li>
+        `Boolean`: Valores lógicos. Ex:
+        <code>let estaLogado = true;</code>
+      </li>
+    </ul>
+
+    <h4>Operadores Básicos</h4>
+    <p>
+      Operadores são símbolos que realizam operações. Os mais comuns incluem:
+    </p>
+    <ul>
+      <li>
+        `+`, `-`, `*`, `/`: Operadores matemáticos.
+      </li>
+      <li>
+        `==`, `===`: Operadores de comparação.
+      </li>
+      <li>
+        `&&` (AND), `||` (OR): Operadores lógicos.
+      </li>
+    </ul>
+    <pre><code>
+const num1 = 10;
+const num2 = 5;
+
+// Soma os números
+const soma = num1 + num2;
+console.log(soma); // 15
+    </code></pre>
+
+    <h4>Funções: Reutilizando Código</h4>
+    <p>
+      Uma **função** é um bloco de código que você pode chamar e executar
+      várias vezes. Elas são essenciais para organizar seu código e evitar
+      repetição.
+    </p>
+    <pre><code>
+// Declaração da função
+function saudacao(nome) {
+  return "Olá, " + nome + "!";
+}
+
+// Chamando a função
+console.log(saudacao("João"));
+    </code></pre>
+    <p>
+      Com esses fundamentos, você já pode começar a pensar em como o
+      JavaScript pode interagir com o seu HTML. O próximo passo é aprender a
+      manipular os elementos da página.
+    </p>
+  </div>
+</article>
+ <!-- Intermediário html -->
+        <article class="card" tabindex="0" aria-expanded="false">
+        <div class="card-preview">
+        <img
+            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Uma imagem que representa o tema do post"
+            class="card-thumbnail"
+        />
+
+        <div class="card-info">
+            <h2 class="card-title">HTML: O Poder da Semântica<span class="tag-nivel">#Intermediário</span></h2>
+            <p class="card-description">
+            Vá além do básico. Aprenda a organizar seu conteúdo de forma
+            significativa usando tags semânticas para SEO e acessibilidade.
+            </p>
+
+            <div class="card-meta">
+            <span class="card-author">Por: Equipe Aprender Programar</span> |
+            <span class="card-date">Publicado em: 06/08/2025</span> |
+            <span class="card-read-time">Tempo de leitura: 7min</span>
+            </div>
+
+            <div class="card-tags">
+            <span class="tag">#HTML5</span>
+            <span class="tag">#Semântica</span>
+            <span class="tag">#SEO</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-content">
+        <p>
+            Depois de entender as tags básicas, é hora de dar um passo importante:
+            usar o **HTML Semântico**. Semântica significa dar um significado ao
+            seu conteúdo, não apenas uma aparência. Isso é crucial para o SEO
+            (otimização de buscas) e para a acessibilidade do seu site.
+        </p>
+
+        <h4>As Principais Tags Semânticas</h4>
+        <p>
+            O HTML5 introduziu tags que descrevem a função de seu conteúdo,
+            tornando a estrutura do seu documento mais clara. As principais são:
+        </p>
+        <ul>
+            <li>
+            <code>&lt;header&gt;</code>: Contém o cabeçalho, geralmente com
+            logotipo e menu de navegação.
+            </li>
+            <li>
+            <code>&lt;nav&gt;</code>: Define um bloco de navegação.
+            </li>
+            <li>
+            <code>&lt;main&gt;</code>: O conteúdo principal e único da página.
+            </li>
+            <li>
+            <code>&lt;section&gt;</code>: Agrupa conteúdo relacionado, como
+            diferentes partes de um artigo.
+            </li>
+            <li>
+            <code>&lt;article&gt;</code>: Representa um conteúdo autossuficiente,
+            como uma postagem de blog ou notícia.
+            </li>
+            <li>
+            <code>&lt;aside&gt;</code>: Conteúdo lateral ou relacionado, mas não
+            essencial para o fluxo principal.
+            </li>
+            <li>
+            <code>&lt;footer&gt;</code>: O rodapé da página.
+            </li>
+        </ul>
+
+        <h4>Exemplo de Layout com Semântica</h4>
+        <p>
+            Veja como um layout simples de blog poderia ser estruturado com essas
+            tags, o que torna o código mais compreensível para humanos e máquinas.
+        </p>
+        <pre><code>
+        &lt;body&gt;
+        &lt;header&gt;
+        &lt;h1&gt;Aprender Programar&lt;/h1&gt;
+        &lt;nav&gt;...menu de navegação...&lt;/nav&gt;
+        &lt;/header&gt;
+
+        &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Título do Artigo&lt;/h2&gt;
+            &lt;p&gt;Conteúdo do artigo aqui.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;aside&gt;
+            &lt;h4&gt;Artigos Relacionados&lt;/h4&gt;
+            &lt;ul&gt;...&lt;/ul&gt;
+        &lt;/aside&gt;
+        &lt;/main&gt;
+
+        &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 Aprender Programar&lt;/p&gt;
+        &lt;/footer&gt;
+        &lt;/body&gt;
+        </code></pre>
+        <p>
+            Com as tags semânticas, seu código não é apenas uma coleção de
+            elementos, mas uma história bem contada. No próximo nível, vamos
+            adicionar interatividade com formulários e APIs!
+        </p>
+        </div>
+        </article>
+ <!-- Intermediário css -->
+    <article class="card" tabindex="0" aria-expanded="false">
+    <div class="card-preview">
+    <img
+    src="https://images.pexels.com/photos/4557993/pexels-photo-4557993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    alt="Uma imagem que representa o tema do post"
+    class="card-thumbnail"
+    />
+
+    <div class="card-info">
+    <h2 class="card-title">CSS: Dominando o Flexbox para Layouts<span class="tag-nivel">#Intermediário</span></h2>
+    <p class="card-description">
+    Diga adeus a layouts complicados. Aprenda a usar o Flexbox para
+    organizar elementos de forma simples e responsiva.
+    </p>
+
+    <div class="card-meta">
+    <span class="card-author">Por: Equipe Aprender Programar</span> |
+    <span class="card-date">Publicado em: 09/08/2025</span> |
+    <span class="card-read-time">Tempo de leitura: 7min</span>
+    </div>
+
+    <div class="card-tags">
+    <span class="tag">#CSS</span>
+    <span class="tag">#Flexbox</span>
+    <span class="tag">#Layout</span>
+    </div>
+    </div>
+    </div>
+
+    <div class="card-content">
+    <p>
+    O **Flexbox** é um módulo de layout unidimensional do CSS que permite
+    organizar elementos em uma linha ou coluna. É a ferramenta mais
+    utilizada para criar componentes de interface de forma fácil e
+    responsiva.
+    </p>
+
+    <h4>Flexbox na Prática: Contêiner e Itens</h4>
+    <p>
+    O Flexbox funciona com um **contêiner** (o pai) e seus **itens** (os
+    filhos). A mágica acontece quando você define o contêiner com
+    <code>display: flex</code>.
+    </p>
+
+    <pre><code>
+    .container {
+    display: flex;
+    flex-direction: row; /* Ou column */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    }
+    </code></pre>
+
+    <p>
+    Veja o que cada propriedade faz:
+    </p>
+    <ul>
+    <li>
+    <code>flex-direction</code>: Define se os itens se organizam em
+    linha (<code>row</code>) ou em coluna (<code>column</code>).
+    </li>
+    <li>
+    <code>justify-content</code>: Controla o alinhamento dos itens no
+    eixo principal.
+    </li>
+    <li>
+    <code>align-items</code>: Controla o alinhamento dos itens no eixo
+    secundário.
+    </li>
+    </ul>
+
+    <p>
+    A seguir, um exemplo de como usar o Flexbox para centralizar os itens de
+    um menu de navegação:
+    </p>
+    <pre><code>
+    &lt;nav class="menu-nav"&gt;
+    &lt;a href="#"&gt;Início&lt;/a&gt;
+    &lt;a href="#"&gt;Sobre&lt;/a&gt;
+    &lt;a href="#"&gt;Contato&lt;/a&gt;
+    &lt;/nav&gt;
+    </code></pre>
+
+    <pre><code>
+    .menu-nav {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço entre os itens */
+    }
+    </code></pre>
+
+    <p>
+    Com o Flexbox, você pode criar layouts complexos e dinâmicos de forma
+    simples. Em nosso próximo e último artigo sobre CSS, vamos dar vida aos
+    seus layouts com animações!
+    </p>
+    </div>
+    </article>
+ <!-- Intermediário js -->
+    <article class="card" tabindex="0" aria-expanded="false">
+  <div class="card-preview">
+    <img
+      src="https://images.pexels.com/photos/4557993/pexels-photo-4557993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Uma imagem que representa o tema do post"
+      class="card-thumbnail"
+    />
+
+    <div class="card-info">
+      <h2 class="card-title">JavaScript: Manipulando o DOM<span class="tag-nivel">#Intermediário</span></h2>
+      <p class="card-description">
+        Aprenda a selecionar elementos e modificar o conteúdo e estilo da sua
+        página. Dê vida ao seu site com interatividade.
+      </p>
+
+      <div class="card-meta">
+        <span class="card-author">Por: Equipe Aprender Programar</span> |
+        <span class="card-date">Publicado em: 12/08/2025</span> |
+        <span class="card-read-time">Tempo de leitura: 7min</span>
+      </div>
+
+      <div class="card-tags">
+        <span class="tag">#JavaScript</span>
+        <span class="tag">#DOM</span>
+        <span class="tag">#Intermediário</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <p>
+      O **DOM (Document Object Model)** é a representação em árvore da sua
+      página HTML. O JavaScript se comunica com o DOM para acessar e modificar
+      os elementos.
+    </p>
+
+    <h4>Selecionando Elementos</h4>
+    <p>
+      Antes de modificar algo, você precisa selecioná-lo. A maneira mais
+      comum é usando <code>querySelector()</code>.
+    </p>
+    <pre><code>
+// Seleciona um elemento por ID
+const titulo = document.querySelector("#titulo-principal");
+
+// Seleciona o primeiro elemento com uma classe
+const paragrafo = document.querySelector(".paragrafo-destaque");
+    </code></pre>
+
+    <h4>Modificando Conteúdo e Estilo</h4>
+    <p>
+      Depois de selecionar um elemento, você pode mudar seu conteúdo, atributos
+      e estilos.
+    </p>
+    <pre><code>
+// Muda o texto
+titulo.textContent = "Olá, Mundo alterado!";
+
+// Adiciona uma classe CSS
+paragrafo.classList.add("paragrafo-azul");
+
+// Remove uma classe
+paragrafo.classList.remove("paragrafo-vermelho");
+
+// Altera um estilo diretamente
+titulo.style.color = "blue";
+    </code></pre>
+    <p>
+      A propriedade `classList` é especialmente útil, pois permite alternar
+      classes CSS, o que é a base de muitas interações dinâmicas.
+    </p>
+
+    <h4>Exemplo Prático: Alternando Classes</h4>
+    <p>
+      Imagine um botão que muda de estilo quando clicado.
+    </p>
+    <pre><code>
+const botao = document.querySelector("#botao-acao");
+
+botao.addEventListener("click", () => {
+  botao.classList.toggle("ativo");
+});
+    </code></pre>
+    <p>
+      A função `classList.toggle()` adiciona a classe "ativo" se ela não
+      estiver presente, e a remove se estiver. Essa é uma técnica poderosa
+      para criar interações simples e eficientes.
+    </p>
+    <p>
+      Com a manipulação do DOM, você pode criar uma experiência interativa. O
+      próximo passo é ir além da página local e interagir com o mundo
+      exterior, usando eventos e APIs.
+    </p>
+  </div>
+</article>
+ <!-- Avançado html -->
+        <article class="card" tabindex="0" aria-expanded="false">
+        <div class="card-preview">
+        <img
+            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Uma imagem que representa o tema do post"
+            class="card-thumbnail"
+        />
+
+        <div class="card-info">
+            <h2 class="card-title">HTML: Formulários e APIs Nativas<span class="tag-nivel">#Avançado</span></h2>
+            <p class="card-description">
+            Crie formulários inteligentes e utilize o poder do HTML5 para
+            interagir com o dispositivo do usuário.
+            </p>
+
+            <div class="card-meta">
+            <span class="card-author">Por: Equipe Aprender Programar</span> |
+            <span class="card-date">Publicado em: 07/08/2025</span> |
+            <span class="card-read-time">Tempo de leitura: 8min</span>
+            </div>
+
+            <div class="card-tags">
+            <span class="tag">#HTML5</span>
+            <span class="tag">#Avançado</span>
+            <span class="tag">#APIs</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="card-content">
+        <p>
+            O HTML não serve apenas para exibir conteúdo estático. Com **formulários**
+            e **APIs (Application Programming Interfaces)**, ele se torna uma
+            ferramenta poderosa para interatividade e comunicação.
+        </p>
+
+        <h4>Criando Formulários com Validação</h4>
+        <p>
+            Formulários são essenciais para coletar dados do usuário. O HTML5
+            melhorou o processo, adicionando tipos de entrada (<code>type</code>)
+            e validações que funcionam no navegador.
+        </p>
+        <pre><code>
+        &lt;form action="/submit-form" method="post"&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+
+        &lt;label for="site"&gt;URL do seu site:&lt;/label&gt;
+        &lt;input type="url" id="site" name="site"&gt;
+
+        &lt;label for="senha"&gt;Senha:&lt;/label&gt;
+        &lt;input type="password" id="senha" name="senha" required minlength="8"&gt;
+
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+        &lt;/form&gt;
+        </code></pre>
+        <p>
+            Os atributos <code>type="email"</code> e <code>type="url"</code> validam
+            automaticamente a entrada do usuário. O atributo <code>required</code>
+            garante que o campo não seja enviado vazio, e <code>minlength</code>
+            define um tamanho mínimo para a senha.
+        </p>
+
+        <h4>APIs Nativas: O HTML5 em Ação</h4>
+        <p>
+            As APIs permitem que seu site se comunique com o navegador e o hardware
+            do usuário. Uma das mais conhecidas é a **Geolocation API**, que
+            permite obter a localização do usuário com sua permissão.
+        </p>
+
+        <pre><code>
+        // Solicita a localização do usuário
+        navigator.geolocation.getCurrentPosition(function(posicao) {
+        const lat = posicao.coords.latitude;
+        const lon = posicao.coords.longitude;
+        console.log('Sua localização:', lat, lon);
+        }, function() {
+        console.log('Não foi possível obter a localização.');
+        });
+        </code></pre>
+        <p>
+            Isso demonstra o quão longe o HTML evoluiu: de uma simples linguagem de
+            documentos para uma base para aplicações web ricas e interativas.
+            Com essas ferramentas, você pode criar experiências de usuário muito mais
+            dinâmicas e completas.
+        </p>
+        </div>
+        </article>
+<!-- Avançado css -->
+    <article class="card" tabindex="0" aria-expanded="false">
+    <div class="card-preview">
+    <img
+    src="https://images.pexels.com/photos/5926384/pexels-photo-5926384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    alt="Uma imagem que representa o tema do post"
+    class="card-thumbnail"
+    />
+
+    <div class="card-info">
+    <h2 class="card-title">CSS: Animações e Transições para Dar Vida<span class="tag-nivel">#Avançado</span></h2>
+    <p class="card-description">
+    Deixe seu site mais dinâmico. Aprenda a usar transições e keyframes
+    para criar efeitos visuais incríveis.
+    </p>
+
+    <div class="card-meta">
+    <span class="card-author">Por: Equipe Aprender Programar</span> |
+    <span class="card-date">Publicado em: 10/08/2025</span> |
+    <span class="card-read-time">Tempo de leitura: 6min</span>
+    </div>
+
+    <div class="card-tags">
+    <span class="tag">#CSS</span>
+    <span class="tag">#Animação</span>
+    <span class="tag">#Avançado</span>
+    </div>
+    </div>
+    </div>
+
+    <div class="card-content">
+    <p>
+    Adicionar movimento a uma página pode melhorar a experiência do usuário.
+    O CSS oferece duas ferramentas principais para isso: **transições**
+    (<code>transition</code>) e **animações** (<code>@keyframes</code>).
+    </p>
+
+    <h4>Transições: Movimento entre Estados</h4>
+    <p>
+    Uma transição é uma forma de animar a mudança de uma propriedade CSS
+    entre dois estados, como um elemento que muda de cor ao passar o mouse.
+    </p>
+
+    <pre><code>
+    .botao {
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out;
+    }
+
+    .botao:hover {
+    background-color: #1a64d6; /* Um azul um pouco mais escuro */
+    }
+    </code></pre>
+
+    <p>
+    A propriedade <code>transition</code> especifica a propriedade a ser
+    animada (<code>background-color</code>), a duração (<code>0.3s</code>)
+    e a função de tempo (<code>ease-in-out</code>), que controla a
+    velocidade da animação.
+    </p>
+
+    <h4>Animações: Movimento Contínuo e Personalizado</h4>
+    <p>
+    Para animações mais complexas ou que não dependem de um evento como o
+    `hover`, usamos a regra `@keyframes`. Ela permite definir os estágios
+    de uma animação do início ao fim.
+    </p>
+
+    <pre><code>
+    @keyframes pulso {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+    }
+
+    .elemento-animado {
+    animation: pulso 2s infinite;
+    }
+    </code></pre>
+
+    <p>
+    Neste exemplo, a animação `pulso` faz com que o elemento aumente e
+    diminua de tamanho continuamente. A propriedade `animation` no
+    `.elemento-animado` aplica a animação com duração de 2 segundos e
+    repete infinitamente.
+    </p>
+
+    <p>
+    Com transições e animações, você pode criar uma experiência visual
+    muito mais rica e interativa, elevando o nível do seu projeto. Com isso,
+    concluímos a trilha de CSS!
+    </p>
+    </div>
+    </article>
+<!-- Avançando js -->
+    <article class="card" tabindex="0" aria-expanded="false">
+  <div class="card-preview">
+    <img
+      src="https://images.pexels.com/photos/5926384/pexels-photo-5926384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Uma imagem que representa o tema do post"
+      class="card-thumbnail"
+    />
+
+    <div class="card-info">
+      <h2 class="card-title">JS: Eventos e Requisições Assíncronas<span class="tag-nivel">#Avançado</span></h2>
+      <p class="card-description">
+        Construa aplicações web dinâmicas que respondem a eventos e buscam
+        dados da internet usando a API Fetch.
+      </p>
+
+      <div class="card-meta">
+        <span class="card-author">Por: Equipe Aprender Programar</span> |
+        <span class="card-date">Publicado em: 13/08/2025</span> |
+        <span class="card-read-time">Tempo de leitura: 8min</span>
+      </div>
+
+      <div class="card-tags">
+        <span class="tag">#JavaScript</span>
+        <span class="tag">#Eventos</span>
+        <span class="tag">#Avançado</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <p>
+      Uma aplicação web moderna não é apenas reativa, ela é interativa. O
+      JavaScript permite que o seu site **responda a eventos** do usuário
+      e **faça requisições** para APIs na internet.
+    </p>
+
+    <h4>Eventos: Ações do Usuário</h4>
+    <p>
+      Eventos são ações do usuário, como cliques, movimentos do mouse ou
+      envios de formulário. O método `addEventListener()` permite que você
+      "escute" por um evento e execute uma função em resposta.
+    </p>
+    <pre><code>
+const botao = document.querySelector('#meu-botao');
+botao.addEventListener('click', function(event) {
+  alert('Você clicou no botão!');
+});
+    </code></pre>
+    <p>
+      Neste exemplo, a função é executada toda vez que o botão com o ID
+      `meu-botao` é clicado.
+    </p>
+
+    <h4>Requisições Assíncronas com `fetch`</h4>
+    <p>
+      Para buscar dados de outras fontes, como uma API de notícias ou de
+      clima, usamos requisições assíncronas. A **API Fetch** é a forma
+      nativa de fazer isso no JavaScript moderno.
+    </p>
+    <pre><code>
+// URL da API que retorna uma lista de posts de exemplo
+const url = 'https://jsonplaceholder.typicode.com/posts/1';
+
+fetch(url)
+  .then(response => response.json()) // Converte a resposta para JSON
+  .then(data => {
+    console.log(data); // Exibe os dados no console
+    // document.querySelector('#titulo').textContent = data.title;
+  })
+  .catch(error => console.error('Erro:', error));
+    </code></pre>
+    <p>
+      Com o `fetch`, o seu site pode carregar dados em segundo plano sem
+      travar a interface. Isso é a base para a criação de aplicações como
+      redes sociais, e-commerce e dashboards interativos.
+    </p>
+    <p>
+      Parabéns! Você concluiu a jornada de aprendizado em JavaScript,
+      dominando a lógica, a manipulação do DOM e a comunicação com a
+      internet.
+    </p>
+  </div>
+</article>
+<!-- Pílula -->
+        <article class="card" tabindex="0" aria-expanded="false">
+            <div class="card-preview">
+                <img
+                src="./assets/imgs/aprender_programar-logo.png"
+                alt="Uma imagem que representa a logo do blog Aprender Programar"
+                class="card-thumbnail logo-img"
+                />
+
+                <div class="card-info">
+                <h2 class="card-title">Bem-vindo ao Aprender Programar!<span class="tag-nivel">#Iniciante</span></h2>
+                <p class="card-description">
+                    Descubra um jeito rápido e prático de aprender programação com nossos
+                    conteúdos em pílulas, direto ao ponto.
+                </p>
+
+                <div class="card-meta">
+                    <span class="card-author">Por: Equipe Aprender Programar</span> |
+                    <span class="card-date">Publicado em: 01/08/2025</span> |
+                    <span class="card-read-time">Tempo de leitura: 3min</span>
+                </div>
+
+                <div class="card-tags">
+                    <span class="tag">#Sobre</span>
+                    <span class="tag">#BemVindo</span>
+                    <span class="tag">#AprenderProgramar</span>
+                </div>
+                </div>
+            </div>
+
+            <div class="card-content">
+                <p>
+                Bem-vindo(a) ao <strong>Aprender Programar: Em pílulas, direto ao
+                ponto</strong>! Se você está buscando uma maneira eficiente e
+                descomplicada de iniciar ou aprofundar seus conhecimentos em programação,
+                você está no lugar certo.
+                </p>
+                <p>
+                Nossa proposta é simples: entregar conteúdo de qualidade, focado no
+                essencial, em formatos rápidos e fáceis de consumir. Acreditamos que
+                aprender a programar não precisa ser uma jornada longa e exaustiva. Com as
+                informações certas, apresentadas de forma clara e objetiva, você pode dar
+                passos significativos no mundo do desenvolvimento a cada dia.
+                </p>
+
+                <img
+                src="/assets/imgs/aprender_programar-id.png"
+                alt="Logo do blog Aprender Programar"
+                class="post-image"
+                />
+
+                <h4>Como Usar o Aprender Programar</h4>
+                <p>
+                Navegar e aprender com o nosso blog é muito fácil:
+                </p>
+
+                <ul>
+                <li>
+                    <strong>Explore os Cards:</strong> Na página principal, você
+                    encontrará diversos cards, cada um representando um tópico específico
+                    dentro do mundo da programação. Eles são organizados por temas como
+                    HTML, CSS, JavaScript e outros, e também por níveis de dificuldade
+                    (iniciante, intermediário, avançado).
+                </li>
+                <li>
+                    <strong>Leia as Descrições:</strong> Cada card possui uma descrição
+                    concisa que informa o tema do artigo, o nível de dificuldade, a data de
+                    publicação e o tempo estimado de leitura. Isso ajuda você a escolher os
+                    conteúdos mais relevantes para seus objetivos e seu ritmo de aprendizado.
+                </li>
+                <li>
+                    <strong>Clique para Aprender:</strong> Ao clicar em um card, o
+                    conteúdo completo do artigo será revelado, permitindo que você mergulhe
+                    no aprendizado. Nossos artigos seguem um formato consistente, combinando
+                    texto explicativo, exemplos práticos de código, imagens e, em alguns
+                    casos, vídeos para facilitar a compreensão.
+                </li>
+                <li>
+                    <strong>Use as Tags:</strong> As tags no final de cada card (ex:
+                    #HTML5, #Backend, #Iniciante) são links rápidos para outros artigos
+                    relacionados ao mesmo tema. Use-as para explorar conteúdos similares e
+                    aprofundar seus estudos.
+                </li>
+                <li>
+                    <strong>Siga a Sequência:</strong> Para facilitar o aprendizado
+                    progressivo, os artigos estão sendo criados em sequência (iniciante,
+                    intermediário, avançado). Recomendamos começar pelos níveis iniciantes
+                    para construir uma base sólida.
+                </li>
+                </ul>
+
+                <p>
+                Nosso objetivo é ser seu parceiro constante na jornada de aprendizado da
+                programação. Seja para dar os primeiros passos, aprimorar suas
+                habilidades ou se manter atualizado com as últimas tendências, o
+                <strong>Aprender Programar</strong> está aqui para você.
+                </p>
+                <p>
+                Fique à vontade para explorar, aprender e compartilhar nosso conteúdo com
+                outros entusiastas da programação. Seja bem-vindo(a) à nossa comunidade!
+                </p>
+            </div>
+        </article>
+<!-- Básico HTML 5 -->
+        <article class="card" tabindex="0" aria-expanded="false">
+            <div class="card-preview">
+            <img
+                src="https://blog.xpeducacao.com.br/wp-content/uploads/2022/08/o-que-e-html.png"
+                alt="Uma imagem que representa o tema do post"
+                class="card-thumbnail"
+            />
+
+            <div class="card-info">
+                <h2 class="card-title">Introdução ao HTML5<span class="tag-nivel">#Iniciante</span></h2>
+                <p class="card-description">
+                O HTML5 é a linguagem de marcação fundamental para a web. Veja um
+                pouco sobre suas novidades!
+                </p>
+
+                <div class="card-meta">
+                <span class="card-author">Por: Douglas A.B. Novato</span> |
+                <span class="card-date">Publicado em: 25/07/2025</span> |
+                <span class="card-read-time">Tempo de leitura: 6min</span>
+                </div>
+
+                <div class="card-tags">
+                <span class="tag">#HTML5</span>
+                <span class="tag">#DesenvolvimentoWeb</span>
+                <span class="tag">#Iniciante</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="card-content">
+            <p>
+                O <strong>HTML5</strong> é a última versão do HTML, a linguagem de
+                marcação fundamental para a web. Ele introduziu novas tags
+                semânticas e APIs poderosas para criar aplicações web mais ricas e
+                interativas.
+            </p>
+
+            <h4>Tags Semânticas para Melhor Organização</h4>
+            <p>
+                O HTML5 trouxe novidades como <code>&lt;header&gt;</code>,
+                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> e
+                <code>&lt;footer&gt;</code>, que ajudam a estruturar o conteúdo de
+                forma mais clara, melhorando a acessibilidade e o SEO. Veja um
+                exemplo prático de como utilizar a tag <code>&lt;header&gt;</code>:
+            </p>
+
+            <pre><code>
+    &lt;header&gt;
+    &lt;h1&gt;Título do meu Blog&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;/header&gt;
+            </code></pre>
+            <p>
+                Com esse código, você agrupa o título principal e o menu de
+                navegação de forma semântica, tornando a estrutura do documento mais
+                compreensível.
+            </p>
+
+            <img
+                src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Exemplo de tags semânticas no HTML"
+                class="post-image"
+            />
+
+            <h4>Recursos para Aprofundar o Conhecimento</h4>
+            <p>
+                Para uma visualização mais clara e um aprofundamento sobre como usar
+                as novas tags semânticas, confira o vídeo abaixo.
+            </p>
+            <div class="video-container">
+                <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                ></iframe>
+            </div>
+            </div>
+        </article>
+<!-- Linkedin -->
+        <article class="card" tabindex="0" aria-expanded="false">
+            <div class="card-preview">
+            <img
+                src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg"
+                alt="Uma imagem que representa o tema do post"
+                class="card-thumbnail"
+            />
+
+            <div class="card-info">
+                <h2 class="card-title">O Perfil do Desenvolvedor<span class="tag-nivel">#Iniciante</span></h2>
+                <p class="card-description">
+                Descubra como otimizar seu perfil no LinkedIn para atrair oportunidades e se conectar com outros profissionais de tecnologia.
+                </p>
+
+                <div class="card-meta">
+                <span class="card-author">Por: Douglas A.B. Novato</span> |
+                <span class="card-date">Publicado em: 01/08/2025</span> |
+                <span class="card-read-time">Tempo de leitura: 6min</span>
+                </div>
+
+                <div class="card-tags">
+                <span class="tag">#LinkedIn</span>
+                <span class="tag">#Carreira</span>
+                <span class="tag">#Networking</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="card-content">
+            <p>
+                <strong>Criando sua Marca Profissional</strong> Para desenvolvedores, o LinkedIn vai além de um simples currículo online. Ele é uma vitrine de sua carreira, um espaço para mostrar suas habilidades, projetos e sua paixão por tecnologia. Um perfil otimizado funciona como uma marca pessoal, tornando você mais visível e atrativo para recrutadores e empresas.
+            </p>
+
+            <h4>Otimizando seu Perfil</h4>
+            <p>
+                Ter um perfil completo e bem estruturado é o primeiro passo para se destacar.
+
+                <ol>
+                    <li>Foto de Perfil Profissional: Use uma foto de alta qualidade, com boa iluminação e que transmita profissionalismo. Evite fotos de festas ou ambientes informais.</li>
+                    <li>Título Profissional (Headline): Esta é a frase que aparece logo abaixo do seu nome. Use-a para descrever sua especialidade. Em vez de "Desenvolvedor", seja específico. Ex: "Desenvolvedor Full-Stack | JavaScript | Node.js | React".</li>
+                    <li>O Resumo Profissional (About): Use este espaço para contar sua história. Fale sobre suas tecnologias favoritas, o que te motiva e quais são seus objetivos de carreira. Mencione seus principais projetos e as tecnologias que você domina.</li>
+                    <li>Projetos em Destaque: A seção "Destaques" é perfeita para exibir seus projetos mais relevantes. Adicione links para o repositório do GitHub e para o projeto funcionando (se houver).</li>
+                    <li>Experiência e Educação: Preencha essas seções com informações detalhadas. Para a experiência, não se limite a listar suas responsabilidades; descreva o impacto que você gerou em cada projeto.</li>
+                </ol>
+            </p>
+
+            
+            <h4>Conectando e Crescendo</h4>
+            <p>
+                O LinkedIn é uma rede social, e o networking é a chave para o sucesso.
+                <ol>
+                    <li>Siga Empresas e Pessoas Chave: Siga empresas que você admira e profissionais influentes na sua área. Isso te mantém atualizado sobre as tendências do mercado.</li>
+                    <li>Publique Conteúdo Relevante: Compartilhe artigos interessantes, tutoriais ou até mesmo seus próprios projetos. Isso demonstra seu conhecimento e engajamento com a comunidade.</li>
+                    <li>Interaja: Curta, comente e compartilhe as publicações de outros profissionais. Essa interação pode abrir portas e criar novas conexões.</li>                
+                </ol>
+            </p>
+
+            <h4>Recursos para Aprofundar o Conhecimento</h4>
+            <p>
+                Além disso tudo, tem um vídeo muito legal com ainda mais detalhes para nos ajudar a configurar e personalizar o nosso Linkedin para nos aproximar daquela vaga que queremos ou daqueles profissionais que compartilham bons conteúdos para nossa carreira.
+            </p>
+            <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ijQkaT63o9w?si=8fdacbtknZDi0JCK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <p>
+                Outro artigo muito bom, é o texto a seguir, compartilhado pelo portal DevMedia que conta dez passos interessantes para alcançar um bom Linkedin.
+            </p>
+            <div class="artigo-container">
+                <a href="https://www.devmedia.com.br/10-dicas-para-melhorar-o-seu-linkedin-de-programador/44129" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://media.licdn.com/dms/image/v2/D4D05AQFzZJBgeMjAfg/feedshare-thumbnail_720_1280/feedshare-thumbnail_720_1280/0/1684334202535?e=2147483647&v=beta&t=754ybElLVgkE3pCV6dMgkkIC7Vo5EXoMUa3APaWOGxU"
+                alt="Exemplo de tags semânticas no HTML"
+                class="post-image"
+            /></a>
+            </div>
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXHMG6qFuHkyM9p4uP17y02gQP5R1fR4KuWQ&s"
+                alt="Exemplo de tags semânticas no HTML"
+                class="post-image"
+            />
+            </div>
+        </article>
+
+    </main>
+     
+
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-brand">
+      <a href="#" class="brand-link">
+        <img
+          src="./assets/imgs/aprender_programar-logo.png"
+          alt="Pílulas: Aprender Programar"
+          class="footer-logo"
+        />
+        <h2 class="pills-font footer-slogan">pílulas, é direto ao ponto</h2>
+      </a>
+    </div>
+
+    <div class="footer-cta">
+      <p>
+        Está com alguma dúvida sobre programação?
+        <br />
+        Envie-nos sua pergunta! Ela pode se tornar a próxima
+        <span class="pills-font">pílula</span> do blog.
+      </p>
+      <a href="mailto:contato@pilulas.dev" class="cta-link">Enviar uma pergunta</a>
+    </div>
+ 
+    <div class="footer-comm">
+        <p  class="footer-copyright">&copy; 2025 <span class="pills-font">pílulas</span>. Todos os direitos reservados.</p>
+        <div class="footer-social">
+        <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+        <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+        <a href="#" aria-label="YouTube" class="social-link">YouTube</a>
+        </div>
+    </div>
+
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
