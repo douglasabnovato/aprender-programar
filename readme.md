@@ -5,3 +5,39 @@ Conteúdos da formação na plataforma Cod3r e das instruções no Canal do Yout
 ### Projetos
 
 Organizar os conteúdos em um projeto e criar pastas específicas para projetos de teste.
+
+
+# Pílulas
+
+Um projeto em modelo de blog para demonstrar conteúdo objetivos para resolver situações do ambiente de programação.
+
+## Projeto
+
+Aprender Programar: Em pílulas é direto ao ponto é um projeto que vai crescer conforme a intenção ensinar.
+
+### Estrutura do projeto
+
+- [x] criar o header
+
+- [x] criar os artigos
+
+- [x] criar os filtros
+
+- [x] criar o footer
+
+- [x] hospedar
+
+### Tecnologias e metodologias
+
+- HTML
+- CSS
+- Javascript
+- Material Design Google
+- Resposividade
+
+### Próximos requisitos
+
+- [ ] Paginação
+- [ ] Newsletter
+
+@douglasabnovato
