@@ -42,6 +42,12 @@ Este projeto é um blog minimalista e moderno, focado em oferecer conteúdo de p
 
 ## Evolução do projeto
 
+### Requisistos dos artigos
+
+Serão artigos com a estrutura de ensinar a fazer algo em 5 passos. Isso condiciona a estrturar algo em detalhes para concretizar algo em 5 etapas explicadas em ordem. Se cinco não for o suficiente, significa que deve dividir em dois artigos. Se cinco for demais, deve inserir mais detalhes na sua explicação ou o que deseja ensinar não precisa de um artigo.
+
+Utilize textos, imagens, vídeos e trechos de código para demonstrar e exemplicar a sua explicação.
+
 ### Estrutura do projeto
 
 - [x] criar o header
